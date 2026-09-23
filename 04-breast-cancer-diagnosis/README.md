@@ -14,7 +14,7 @@ Classify breast tumors as malignant or benign from cell nucleus measurements.
 - Evaluated with accuracy, a classification report, and a confusion matrix.
 
 ## Result
-**~96–97% accuracy** (0.96 macro-F1).
+**96.7% accuracy** (0.96 macro-F1) on the test set, re-verified by re-running the notebook.
 
 ---
 *Group project from the Vert 2024 data trainee program. See the [main README](../README.md) for context.*

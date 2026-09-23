@@ -12,22 +12,21 @@ In **2025** I was **hired as a data scientist**, the role I held until **May 202
 
 ## Projects
 
-Only projects that run end to end with solid results are included. Metrics are on held-out test data unless noted.
+Only projects whose core pipeline (data → model → evaluation) runs end to end with solid results are included. Metrics are on held-out test data unless noted. For portfolio publication, I re-ran the notebooks where possible to confirm the numbers.
 
-| # | Project | Techniques | Result |
-|---|---|---|---|
-| 01 | [MNIST digit recognition](01-mnist-digit-recognition) | TensorFlow, Keras, neural networks | **~98% accuracy** |
-| 02 | [Penguin species classification](02-penguin-species-classification) | Random Forest, EDA | **98% accuracy** |
-| 03 | [Obesity level classification](03-obesity-level-classification) | Random Forest, XGBoost, feature engineering | **97.6% accuracy** |
-| 04 | [Breast cancer diagnosis](04-breast-cancer-diagnosis) | Random Forest, GridSearchCV | **~96–97% accuracy** |
-| 05 | [News topic classification (NLP)](05-news-topic-classification-nlp) | TF-IDF, SMOTE, Random Forest | **88% accuracy, 0.88 macro-F1** (10 classes) |
-| 06 | [Face-based gender classifier](06-face-gender-classifier) | face_recognition embeddings, SVM | 99% on the full dataset* |
-| 07 | [Titanic survival](07-titanic-survival) | Random Forest, feature engineering | 81% accuracy |
-| 08 | [Sudoku solver](08-sudoku-solver-linear-programming) | Integer linear programming (PuLP) | optimal solution |
-| 09 | [N-Queens solver](09-n-queens-solver-linear-programming) | Integer linear programming (PuLP) | optimal solution |
-| 10 | [Spotify tracks EDA](10-spotify-eda) | pandas, seaborn, Random Forest regressor | exploratory analysis |
-| 11 | [Mental health in Brazil EDA](11-mental-health-brazil-eda) | pandas, SQL (sqlite3), seaborn | exploratory analysis |
-| 12 | [Extras](12-extras) | Monty Hall simulation, Zipf's law, airport routes | small exercises |
+| # | Project | Techniques | Result | How it was checked |
+|---|---|---|---|---|
+| 01 | [MNIST digit recognition](01-mnist-digit-recognition) | TensorFlow, Keras, neural networks | **97.6% test accuracy** | `model.evaluate()` output |
+| 02 | [Penguin species classification](02-penguin-species-classification) | Random Forest, EDA | **98% accuracy** | re-run |
+| 03 | [Obesity level classification](03-obesity-level-classification) | Random Forest, XGBoost, feature engineering | **97.6% accuracy** | re-run |
+| 04 | [Breast cancer diagnosis](04-breast-cancer-diagnosis) | Random Forest, GridSearchCV | **96.7% accuracy** | re-run |
+| 05 | [Face-based gender classifier](05-face-gender-classifier) | face_recognition embeddings, SVM | 99% on the full dataset* | saved output |
+| 06 | [Titanic survival](06-titanic-survival) | Random Forest, feature engineering | 81% accuracy | saved output |
+| 07 | [Sudoku solver](07-sudoku-solver-linear-programming) | Integer linear programming (PuLP) | optimal solution | re-run |
+| 08 | [N-Queens solver](08-n-queens-solver-linear-programming) | Integer linear programming (PuLP) | optimal solution | re-run |
+| 09 | [Spotify tracks EDA](09-spotify-eda) | pandas, seaborn, Random Forest regressor | exploratory analysis | saved output |
+| 10 | [Mental health in Brazil EDA](10-mental-health-brazil-eda) | pandas, SQL (sqlite3), seaborn | exploratory analysis | saved output |
+| 11 | [Extras](11-extras) | Monty Hall simulation, Zipf's law, airport routes | small exercises | saved output |
 
 \* Evaluated on the whole dataset, training images included, so the number is optimistic. A held-out evaluation is a planned improvement.
 

@@ -14,7 +14,7 @@ MNIST, loaded directly from `tensorflow.keras.datasets`.
 - Tracked accuracy across experiments; it improved from ~82% in the first attempt to ~98%.
 
 ## Result
-Test accuracy of **about 98%**.
+Test accuracy of **97.6%** (`model.evaluate()` on the MNIST test set).
 
 ---
 *Group project from the Vert 2024 data trainee program. See the [main README](../README.md) for context.*
