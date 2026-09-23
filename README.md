@@ -1,0 +1,38 @@
+# Vert Trainee Program: Data Science Projects (2024)
+
+Machine learning, NLP, computer vision, optimization, and data analysis projects built at [Vert](https://www.vert.com.br/) in **2024**, as part of the company's data trainee cohort (*Ninjas Vert 2024*).
+
+> **Group work.** Every project here was developed **as a team** by the trainee cohort, not by me alone. I'm publishing them with that context to document what we learned together and the part I played in it.
+
+## The program
+
+I joined Vert in **November 2023**. Throughout **2024** I rotated through several roles in the company's data area: **requirements analyst, BI analyst, data scientist, and data engineer**. I spent the most time in data science and data engineering. That same year our trainee cohort was mentored in data science and modeling by **Thiago Russo**, a reference for me in the data field. Learning from him was an honor.
+
+In **2025** I was **hired as a data scientist**, the role I held until **May 2026**.
+
+## Projects
+
+Only projects that run end to end with solid results are included. Metrics are on held-out test data unless noted.
+
+| # | Project | Techniques | Result |
+|---|---|---|---|
+| 01 | [MNIST digit recognition](01-mnist-digit-recognition) | TensorFlow, Keras, neural networks | **~98% accuracy** |
+| 02 | [Penguin species classification](02-penguin-species-classification) | Random Forest, EDA | **98% accuracy** |
+| 03 | [Obesity level classification](03-obesity-level-classification) | Random Forest, XGBoost, feature engineering | **97.6% accuracy** |
+| 04 | [Breast cancer diagnosis](04-breast-cancer-diagnosis) | Random Forest, GridSearchCV | **~96–97% accuracy** |
+| 05 | [News topic classification (NLP)](05-news-topic-classification-nlp) | TF-IDF, SMOTE, Random Forest | **88% accuracy, 0.88 macro-F1** (10 classes) |
+| 06 | [Face-based gender classifier](06-face-gender-classifier) | face_recognition embeddings, SVM | 99% on the full dataset* |
+| 07 | [Titanic survival](07-titanic-survival) | Random Forest, feature engineering | 81% accuracy |
+| 08 | [Sudoku solver](08-sudoku-solver-linear-programming) | Integer linear programming (PuLP) | optimal solution |
+| 09 | [N-Queens solver](09-n-queens-solver-linear-programming) | Integer linear programming (PuLP) | optimal solution |
+| 10 | [Spotify tracks EDA](10-spotify-eda) | pandas, seaborn, Random Forest regressor | exploratory analysis |
+| 11 | [Mental health in Brazil EDA](11-mental-health-brazil-eda) | pandas, SQL (sqlite3), seaborn | exploratory analysis |
+| 12 | [Extras](12-extras) | Monty Hall simulation, Zipf's law, airport routes | small exercises |
+
+\* Evaluated on the whole dataset, training images included, so the number is optimistic. A held-out evaluation is a planned improvement.
+
+## Notes
+
+- **Data.** Datasets come from public sources (Kaggle, UCI, Our World in Data, Keras). They are linked in each project instead of redistributed. Projects that used real personal, clinical, or document data were **left out on purpose**.
+- **Notebooks.** They were written in Google Colab, so paths like `/content/...` point to Colab storage. Upload the dataset there, or change the path, to run them.
+- **Language.** Notebook comments are mostly in Portuguese; the documentation is in English.
